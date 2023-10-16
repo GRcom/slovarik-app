@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.slovarik.TranslationsViewController">
+    <children>
+        <Label fx:id="translationText" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="84.0" prefHeight="73.0" prefWidth="640.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <Button fx:id="nextTranslationButton" layoutX="585.0" layoutY="200.0" mnemonicParsing="false" onAction="#nextTranslation" text="Next" />
+        <Button fx:id="prevTranslationButton" layoutX="546.0" layoutY="200.0" mnemonicParsing="false" onAction="#prevTranslation" text="Prev" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.slovarik.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="welcomeText"/>
+    <Button fx:id="startButton" onAction="#onStartButtonClick" text="Начать"/>
+    <TextField fx:id="newWordTextField" alignment="CENTER" maxWidth="480.0" promptText="Слово - Translation"/>
+    <Button fx:id="addNewTranslationButton" onAction="#onAddNewTranslationButtonClick" text="Добавить слово"/>
+    <Button onAction="#onSettingsButtonClick" text="Настройки"/>
+    <Button fx:id="tableButton" alignment="CENTER" contentDisplay="CENTER" onAction="#onTableButtonClick"
+            text="Таблица"/>
+    <TableView fx:id="tableOfTranslations">
+        <columns>
+            <TableColumn fx:id="word" prefWidth="300.0" text="Слово"/>
+            <TableColumn fx:id="translation" prefWidth="299.0" text="Перевод"/>
+        </columns>
+    </TableView>
+
+</VBox>
